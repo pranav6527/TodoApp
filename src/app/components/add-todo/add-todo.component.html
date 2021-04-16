@@ -1,0 +1,12 @@
+<form #form1="ngForm" (ngSubmit)="submit()">
+    <div class="form-group">
+      <label for="name">name</label>
+      <input type="text" name="name" class="form-control" id="name" [(ngModel)]="name" aria-describedby="name" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+      <label for="disc">desc</label>
+      <input type="text" name="discription" class="form-control" [(ngModel)]="disc" id="disc" placeholder="Add discription">
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+  </form>
+  
